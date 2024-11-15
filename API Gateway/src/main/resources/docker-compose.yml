@@ -1,0 +1,81 @@
+version: '3'
+services:
+  userservice:
+    image: userservice:latest  # Image name, replace with the correct name if needed
+    build:
+      context: .  # Builds the Dockerfile in the current directory
+    ports:
+      - "8082:8082"  # Map local port 8082 to container port 8082
+    networks:
+      - mynetwork
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka  # Eureka server URL
+
+  account-service:
+    image: account-service:latest  # Image name for account-service
+    build:
+      context: ./account-service  # Build from the directory where Dockerfile for account-service is
+    ports:
+      - "8081:8081"
+    networks:
+      - mynetwork
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka  # Eureka server URL
+
+  fund-transfer-service:
+    image: fund-transfer-service:latest
+    build:
+      context: ./fund-transfer-service
+    ports:
+      - "8085:8085"
+    networks:
+      - mynetwork
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka
+
+  sequence-generator:
+    image: sequence-generator:latest
+    build:
+      context: ./sequence-generator
+    ports:
+      - "8083:8083"
+    networks:
+      - mynetwork
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka
+
+  transaction-service:
+    image: transaction-service:latest
+    build:
+      context: ./transaction-service
+    ports:
+      - "8084:8084"
+    networks:
+      - mynetwork
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka
+
+  user-service:
+    image: user-service:latest
+    build:
+      context: ./user-service
+    ports:
+      - "8082:8082"
+    networks:
+      - mynetwork
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka
+
+  eureka-server:
+    image: netflixoss/eureka-server:latest  # Assuming you're using Netflix Eureka
+    ports:
+      - "8761:8761"  # Expose Eureka's web UI
+    networks:
+      - mynetwork
+    environment:
+      - EUREKA_SERVER=true
+      - EUREKA_CLIENT=true
+
+networks:
+  mynetwork:
+    driver: bridge  # A custom network for communication between services

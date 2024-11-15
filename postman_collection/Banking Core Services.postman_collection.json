@@ -19,7 +19,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"firstName\" : \"Adam\",\r\n    \"lastName\" : \"Sanadi\",\r\n    \"emailId\" : \"adamsanadi1234@gmail.com\",\r\n    \"contactNumber\" : \"8547159267\",\r\n    \"password\" : \"Adam@1234\"\r\n}",
+									"raw": "{\r\n    \"firstName\" : \"Cyrus\",\r\n    \"lastName\" : \"Mbithi\",\r\n    \"emailId\" : \"cyrusmbithi92@gmail.com\",\r\n    \"contactNumber\" : \"0705507003\",\r\n    \"password\" : \"S!l@2021..\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -124,7 +124,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"firstName\" : \"Kishan\",\r\n    \"lastName\" : \"Kulkarni\",\r\n    \"contactNo\" : \"9562148579\",\r\n    \"address\" : \"Behind Prasad Lodge, Extension Masari\",\r\n    \"gender\" : \"Male\",\r\n    \"occupation\" : \"Student\",\r\n    \"martialStatus\" : \"Single\",\r\n    \"nationality\" : \"Indian\"\r\n}",
+									"raw": "{\r\n    \"firstName\" : \"cyro\",\r\n    \"lastName\" : \"cyro\",\r\n    \"contactNo\" : \"9562148579\",\r\n    \"address\" : \"parklands, Extension Masari\",\r\n    \"gender\" : \"Male\",\r\n    \"occupation\" : \"Student\",\r\n    \"martialStatus\" : \"Single\",\r\n    \"nationality\" : \"Kenyan\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
