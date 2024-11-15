@@ -21,6 +21,8 @@ These technologies not only streamline development but also enhance scalability 
 
 ## 🏛️ Architecture
 
+![Microservices Architecture](./images/architecture.png)
+
 - **Service Registry:** The microservices use a discovery service for service registration and service discovery. This helps the microservices discover and communicate with other services without needing to hardcode the endpoints while communicating with other microservices.
 
 - **API Gateway:** The API Gateway centralizes the API endpoints, providing a single entry point for all the endpoints. It also facilitates security by managing authorization and authentication for the application.
