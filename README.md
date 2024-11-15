@@ -8,8 +8,6 @@
 - [🚀 Getting Started](#-getting-started)
 - [📖 Documentation](#-documentation)
 - [⌚ Future Enhancement](#-future-enhancement)
-- [🤝 Contribution](#-contribution)
-- [📞 Contact Information](#-contact-information)
 
 ## 🔍 About
 The Banking Application is built using a microservices architecture, incorporating the Spring Boot framework along with other Spring technologies such as Spring Data JPA, Spring Cloud, and Spring Security, alongside tools like Maven for dependency management. These technologies play a crucial role in establishing essential components like Service Registry, API Gateway, and more.  
@@ -74,4 +72,4 @@ We are planning several enhancements to improve the user experience and expand f
 
 ---
 
-# b a n k i n g - A p p l i c a t i o n
+# Cyrus Mbithi b a n k i n g - A p p l i c a t i o n
